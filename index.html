@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--========== GOOGLE FONTS ==========-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="styles.css">
+    <title>QUIZ calculatrice en js</title>
+</head>
+
+
+<body>
+    <h2>QUIZ <span>DE CALCUL</span></h2>
+    <div id="app">
+        <div class="infos">
+            <!-- affiche le score du joueur -->
+
+            <div id="score">
+                <p>Score : 20/20</p>
+                <p>Expression : x</p>
+                <p>Level : 1</p>
+            </div>
+        </div>
+
+        <div class="quiz">
+            <div id="level-setup">
+                <!-- affiche le niveau de difficulté -->
+
+                <div class="operator">
+                    <p>Operator</p>
+                    <button class="small-btn" value="+">+</button>
+                    <button class="small-btn" value="-">-</button>
+                    <button class="small-btn" value="x">x</button>
+                    <button class="small-btn" value="/">/</button>
+                </div>
+
+                <div class="level">
+                    <p>Level</p>
+                    <button class="small-btn" value="1">1</button>
+                    <button class="small-btn" value="2">2</button>
+                    <button class="small-btn" value="3">3</button>
+                    <button class="small-btn" value="4">4</button>
+                    <button class="small-btn" value="5">5</button>
+                </div>
+            </div>
+
+            <div id="calcul">
+                <!-- affiche le calcule à faire -->
+                <form class="quiz-form">
+                    <div class="input-group-prepend">
+                        <span id="quiz-statement"></span> =
+                    </div>
+                    <input type="number" id="answer" />
+                    <div class="input-group-append m-2">
+                        <button id="validate-answer">validate</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="result">
+                <!-- affiche le résulat si bon ou mauvais -->
+
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+
+    <!--========== SCRIPT JS ==========-->
+    <script src="script.js"></script>
+</body>
+
+</html>
