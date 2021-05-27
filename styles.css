@@ -23,6 +23,10 @@ button {
     font-weight: bold;
 }
 
+.show {
+    color: #e84118;
+}
+
 h2 {
     margin-top: 0;
     color: #862e6c;
@@ -104,6 +108,18 @@ input#answer {
     min-width: 180px;
     width: 35%;
     max-width: 300px;
+}
+
+.sucess {
+    color: #44bd32;
+}
+
+.active {
+    background-color: #862e6c;
+}
+
+.error {
+    color: #e84118;
 }
 
 @media only screen and (max-width: 910px) {
