@@ -166,10 +166,10 @@ function getOperation(operator) {
 quizFormEl.addEventListener("submit", (event) => {
     //1 solution si on arrive à 20
     /*if (score.questions==maxQuestion) {
-                  return
-              }
-              //2 on entoure d'un if const feeback jusqu'à la fin donc if(isRight)
-              //3 on se dit quand il arrive à la fin on veut plus de soumission,, donc on désactive le submit data.deasable=true*/
+                return
+            }
+            //2 on entoure d'un if const feeback jusqu'à la fin donc if(isRight)
+            //3 on se dit quand il arrive à la fin on veut plus de soumission,, donc on désactive le submit data.deasable=true*/
     //on empêche la soumission du formulaire on veut rester sur la page
     event.preventDefault();
     //on stock la reponse
